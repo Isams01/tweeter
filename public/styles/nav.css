@@ -1,0 +1,19 @@
+
+nav {
+  max-height: 120px;
+  color: #FFFFFF;
+  display: flex;
+  background: #4056A1;
+  justify-content: space-between;
+}
+
+nav span {
+  font-size: 1.5em;
+  font-family: 'Bungee';
+  margin: 1.5em;
+}
+
+nav div {
+  align-content: center;
+  margin: 1.5em;
+}
