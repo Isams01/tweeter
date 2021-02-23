@@ -1,0 +1,5 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  border: solid greenyellow 3px
+}
