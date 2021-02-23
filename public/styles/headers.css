@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  font-family: 'Source Sans Pro';
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #553D67;
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+header div {
+  display: flex;
+  justify-content: center;
+}
+
+header div h2 {
+  color: #ffffff;
+}
