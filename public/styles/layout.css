@@ -29,27 +29,10 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-content: center; */
+  align-items: center;
   border: solid red 3px;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
-.container h1 {
-  display: flex;
-  justify-content: center;
-}
-
-.container p {
-  display: flex;
-  justify-content: center;
-}
-
-#sendTweet {
-  display: flex;
-  flex-direction: column;
-}
 
 
 /*

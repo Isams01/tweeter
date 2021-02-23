@@ -1,5 +1,47 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  border: solid greenyellow 3px
+  justify-content: center;
+  border: solid greenyellow 3px;
+  align-items: center;
+  text-align: left;
+  width: 50%;
+}
+
+#headertest {
+  border: solid red 2px;
+  text-align: left;
+  width: 100%;
+}
+
+#tweet-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid black 5px;
+  width: 100%;
+}
+
+#tweet-text {
+  background-color: transparent;
+  resize: none;
+  width:100%;
+  margin-bottom: 0.5em;
+}
+
+#new-tweet-submit {
+  display: flex;
+  justify-content: space-between;
+}
+#new-tweet-submit .tweet-btn {
+  background-color: transparent;
+  color: #2F2FA2;
+  border: solid #2F2FA2 2px;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+}
+
+#new-tweet-submit .tweet-btn:hover{
+  background-color: #2F2FA2;
+  color: white;
 }
