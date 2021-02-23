@@ -16,12 +16,22 @@ html {
  */
 
 body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: #545149;
   font-family: 'Source Sans Pro';
   background-color: #f4f1ec;
   font-size: 24px;
+
 }
 
+.container {
+  display: flex;
+  border: solid red 3px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 
 /*
