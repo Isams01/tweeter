@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: solid black 5px;
   width: 100%;
 }
 
@@ -25,11 +24,13 @@
   resize: none;
   width:100%;
   margin-bottom: 0.5em;
+  border-bottom: solid black 5px;
 }
 
 #new-tweet-submit {
   display: flex;
   justify-content: space-between;
+  font-family: "Bungee";
 }
 #new-tweet-submit .tweet-btn {
   background-color: transparent;
