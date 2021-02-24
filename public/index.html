@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/headers.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,6 +26,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     
   </head>
 
@@ -57,7 +59,27 @@
             <output name="counter" id="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-      </section>      
+      </section>
+      <section class="tweet">
+        <div class="spread-apart">
+          <div class="left">
+            <img src="./images/user.png" alt="Profile pic" width="50" height="50">
+            <span> Name</span>
+          </div>
+          <span class="username">@Name</span>
+        </div>
+        <p> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asdf asdf asf asdf asdf sadf asdf asdf asdf sadf asdf sadf asdf asdf aa a
+        </p>
+        <div class="spread-apart tweet-footer">
+          <span>Date Created</span>
+          <span>
+            <a href="www.google.com"><i class="fas fa-flag fa-xs"></i></a>
+            <a href="www.google.com"><i class="fas fa-retweet fa-xs"></i></a>
+            <a href="www.google.com"><i class="fas fa-heart fa-xs"></i></a>
+          </span>
+        </div>
+      </section>
     </main>
 
     <script src="scripts/compose-char-counter.js"></script>
