@@ -12,6 +12,15 @@
   box-shadow: 5px 10px 20px;;
 }
 
+.username {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.tweet:hover .username {
+  opacity: 0.5
+}
+
 .tweet span {
   display: flex;
   align-items: center;

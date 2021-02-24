@@ -5,6 +5,9 @@ nav {
   display: flex;
   background: #4056A1;
   justify-content: space-between;
+  width:100%;
+  position: fixed;
+  top: 0;
 }
 
 nav span {

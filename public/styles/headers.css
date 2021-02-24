@@ -1,4 +1,6 @@
 header {
+  margin-top:120px;
+  padding-top: 10px;
   display: flex;
   font-family: 'Source Sans Pro';
   flex-direction: column;
