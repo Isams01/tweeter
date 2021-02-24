@@ -2,6 +2,15 @@
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
+
+Scheme:
+Dark Green: #1b3234
+dark grey: #4e5658
+Yellow: #8a754d
+Light grey: #869498
+lightest grey: #bbb3af
+
+
  */
 
 html {
@@ -19,9 +28,9 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: #545149;
+  color: #4e5658;
   font-family: 'Source Sans Pro';
-  background-color: #f4f1ec;
+  background-color: #869498;
   font-size: 24px;
 }
 

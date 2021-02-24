@@ -1,9 +1,14 @@
-
+/* Scheme:
+Dark Green: #1b3234
+dark grey: #4e5658
+Yellow: #8a754d
+Light grey: #869498
+lightest grey: #bbb3af */
 nav {
   max-height: 120px;
   color: #FFFFFF;
   display: flex;
-  background: #4056A1;
+  background: #1b3234;
   justify-content: space-between;
   width:100%;
   position: fixed;
