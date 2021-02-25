@@ -52,3 +52,11 @@ lightest grey: #bbb3af */
   background-color: #4e5658;
   color: white;
 }
+
+@media only screen and (max-width: 500px) {
+  .new-tweet {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ }
