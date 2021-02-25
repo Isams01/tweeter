@@ -52,6 +52,12 @@ const loadTweets = function() {
   }).then(renderTweets);
 }
 
+const createWarningMessage = (warning) => {
+ return `
+ 
+ `;
+}
+
 
 $(document).ready(function() {
   $('#create-tweet').on('submit', function(event) {
@@ -70,9 +76,11 @@ $(document).ready(function() {
       });
       $(this).children('textarea').val('');
     } else if(textLength > 140){
-      alert('Too many characters');
+      // alert('Too many characters');
+      // $('.container').prepend(createWarningMessage('Please use less that 140 characters')).delay(2000);
+      $('#longWarning').fadeIn().delay(2000).fadeOut();
     } else {
-      alert('Please type something before submitting tweet');
+      $('#emptyWarning').fadeIn().delay(2000).fadeOut();
     }
   })
 })
