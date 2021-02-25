@@ -7,7 +7,6 @@ lightest grey: #bbb3af */
 
 .new-tweet {
   display: flex;
-  border-radius: 4px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
