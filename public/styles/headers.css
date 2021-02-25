@@ -18,6 +18,11 @@ header {
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+#img-background {
+  display: flex;
+  flex-direction: column;
+}
+
 header div {
   display: flex;
   justify-content: center;
@@ -26,3 +31,22 @@ header div {
 header div h2 {
   color: #ffffff;
 }
+
+@media only screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    background-color: #869498;
+    width: 50%;
+    justify-content: flex-start;
+    background-image: none
+  }
+
+  #img-background {
+    background-color: #4e5658;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    margin: 30px;
+    padding: 30px;
+  }
+
+
+ }
