@@ -34,20 +34,19 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
-      <div id=write-a-tweet>
+      <div id="write-a-tweet">
         <div><b>Write</b> a tweet</div>
-        <a href="" id="tweet-btn-redirect"><i style="color: red;"class="far fa-angle-double-down"></i></a>
+        <label for="tweet-text" class="label-style"><i style="color: red;"class="far fa-angle-double-down"></i></label>
       </div>
-      
     </nav>
     <header>
       <div id=img-background>
         <div>
-            <img src="/images/profile-hex.png"> 
+          <img alt="profile hex" src="/images/profile-hex.png"> 
         </div>
         <br>
         <div>
-            <h2><b>Isamu</b> Ito</h2>
+          <h2><b>Isamu</b> Ito</h2>
         </div>
     </div>
       </header>
@@ -55,41 +54,21 @@
   
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <div id="longWarning" style="display:none; justify-content:center; width:50%; border:solid red 5px; color: red; margin-top: 10px; text-align: center"> ⚠️ Please use less that 140 characters ⚠️ </div>
-      <div id="emptyWarning" style="display:none; justify-content:center; width:50%; border:solid red 5px; color: red; margin-top: 10px; text-align: center"> ⚠️ Please type something before submitting ⚠️ </div>
+      <div id="longWarning" class="warning" hidden> ⚠️ Please use less that 140 characters ⚠️ </div>
+      <div id="emptyWarning" class="warning" hidden> ⚠️ Please type something before submitting ⚠️ </div>
 
       <section class="new-tweet">
         <div id="headertest">
           <h2>Compose Tweet</h2>
         </div>
         <form action="/tweets" id="create-tweet" method="POST" style="width: 100%;">
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <textarea name="text" class="tweet-text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div id="new-tweet-submit">
             <button type="submit" class="tweet-btn">Tweet</button>
             <output name="counter" id="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-      <!-- <article class="tweet">
-        <div class="spread-apart">
-          <div class="left">
-            <img class="profile-pic" src="./images/user.png" alt="Profile pic">
-            <span> Name</span>
-          </div>
-          <span class="username">@Name</span>
-        </div>
-        <p> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asdf asdf asf asdf asdf sadf asdf asdf asdf sadf asdf sadf asdf asdf aa a
-        </p>
-        <div class="spread-apart tweet-footer">
-          <span>Date Created</span>
-          <span>
-            <a href="www.google.com"><i class="fas fa-flag fa-xs"></i></a>
-            <a href="www.google.com"><i class="fas fa-retweet fa-xs"></i></a>
-            <a href="www.google.com"><i class="fas fa-heart fa-xs"></i></a>
-          </span>
-        </div>
-      </article> -->
     </main>
 
     <script src="scripts/compose-char-counter.js"></script>

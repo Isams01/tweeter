@@ -6,16 +6,16 @@ Light grey: #869498
 lightest grey: #bbb3af */
 
 header {
-  margin-top:120px;
+  margin-top: 120px;
   padding-top: 10px;
   display: flex;
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   flex-direction: column;
   justify-content: center;
   align-content: space-between;
   background-color: #4e5658;
   background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #img-background {
@@ -38,7 +38,7 @@ header div h2 {
     background-color: #869498;
     width: 50%;
     justify-content: flex-start;
-    background-image: none
+    background-image: none;
   }
 
   #img-background {
@@ -47,6 +47,4 @@ header div h2 {
     margin: 30px;
     padding: 30px;
   }
-
-
- }
+}

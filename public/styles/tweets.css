@@ -38,7 +38,7 @@ lightest grey: #bbb3af */
 }
 
 .tweet:hover .username {
-  opacity: 0.5
+  opacity: 0.5;
 }
 
 .tweet span {
@@ -73,9 +73,8 @@ lightest grey: #bbb3af */
   margin-right: 5px;
 }
 
-
 @media only screen and (max-width: 500px) {
   .tweet {
     width: 100%;
   }
- }
+}

@@ -29,7 +29,7 @@ lightest grey: #bbb3af */
 #tweet-text {
   background-color: #bbb3af;
   resize: none;
-  width:100%;
+  width: 100%;
   margin-bottom: 0.5em;
   border-bottom: solid black 5px;
 }
@@ -48,7 +48,7 @@ lightest grey: #bbb3af */
   transition-duration: 0.5s;
 }
 
-#new-tweet-submit .tweet-btn:hover{
+#new-tweet-submit .tweet-btn:hover {
   background-color: #4e5658;
   color: white;
 }
@@ -59,4 +59,4 @@ lightest grey: #bbb3af */
     padding-left: 10px;
     padding-right: 10px;
   }
- }
+}
