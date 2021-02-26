@@ -21,7 +21,15 @@ nav span {
   margin: 1.5em;
 }
 
+#write-a-tweet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+
+}
+
 nav div {
   align-content: center;
-  margin: 1.5em;
 }

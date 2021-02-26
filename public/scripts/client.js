@@ -83,7 +83,12 @@ $(document).ready(function() {
     } else {
       $('#emptyWarning').fadeIn().delay(2000).fadeOut();
     }
-  })
+  });
+
+  $('#tweet-btn-redirect').on('click', function(event) {
+    event.preventDefault()
+    $('textarea').focus();
+  });
 })
 
 loadTweets();
