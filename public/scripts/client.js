@@ -4,10 +4,25 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
-
 $(document).ready(function() {
   const $newTweet = $('.new-tweet');
+
+  const prependZero = function(number) {
+    if (number < 10){
+      return '0' + number;
+    } else {
+      return number;
+    }
+  }
+
+  const formatDate = function(date) {
+    const day = prependZero(date.getDate());
+    const hours = prependZero(date.getHours());
+    const minutes = prependZero(date.getMinutes());
+    const month = prependZero(date.getMonth());
+    const year = date.getFullYear();
+    return`${month}/${day}/${year} at ${hours}:${minutes}`;
+  }
 
   const escape =  function(str) {
     let div = document.createElement('div');
@@ -29,7 +44,7 @@ $(document).ready(function() {
         ${escape(tweetData.content.text)}
       </p>
       <div class="spread-apart tweet-footer">
-        <span>${new Date(tweetData.created_at)}</span>
+        <span>${formatDate(new Date(tweetData.created_at))}</span>
         <span>
           <a href="www.google.com"><i class="fas fa-flag fa-xs"></i></a>
           <a href="www.google.com"><i class="fas fa-retweet fa-xs"></i></a>
@@ -68,7 +83,7 @@ $(document).ready(function() {
         data: $form.serialize()
       }).then(()=>{
         $('.tweet').remove();
-        loadTweets();
+        loadTweets().then(renderTweets);
       });
       $textArea.val('');
       $form.find('.counter').val('140');
@@ -77,11 +92,6 @@ $(document).ready(function() {
     } else {
       $('#emptyWarning').fadeIn().delay(2000).fadeOut();
     }
-  });
-
-  $('#tweet-btn-redirect').on('click', function(event) {
-    event.preventDefault()
-    $('textarea').focus();
   });
   
   loadTweets().then(renderTweets);
