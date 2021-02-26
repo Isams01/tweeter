@@ -32,8 +32,8 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class="nav-bar">
+      <h1 class="main-logo">tweeter</h1>
       <div id="write-a-tweet">
         <div><b>Write</b> a tweet</div>
         <label for="tweet-text" class="label-style"><i style="color: red;"class="far fa-angle-double-down"></i></label>
@@ -46,15 +46,14 @@
         </div>
         <br>
         <div>
-          <h2><b>Isamu</b> Ito</h2>
+          <h2 class="user"><b>Isamu</b> Ito</h2>
         </div>
-    </div>
-      </header>
-  </header>
+      </div>
+    </header>
   
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <div id="longWarning" class="warning" hidden> ⚠️ Please use less that 140 characters ⚠️ </div>
+      <div id="longWarning" class="warning" hidden> ⚠️ Please use less than 140 characters ⚠️ </div>
       <div id="emptyWarning" class="warning" hidden> ⚠️ Please type something before submitting ⚠️ </div>
 
       <section class="new-tweet">
