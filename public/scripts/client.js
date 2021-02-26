@@ -93,6 +93,11 @@ $(document).ready(function() {
       $('#emptyWarning').fadeIn().delay(2000).fadeOut();
     }
   });
+
+  // this was in the requirements but i prefer to just use the label
+  $('.label-style').on('click', () => {
+    $textArea.focus();
+  })
   
   loadTweets().then(renderTweets);
 });
