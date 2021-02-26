@@ -75,6 +75,7 @@ $(document).ready(function() {
         loadTweets();
       });
       $(this).children('textarea').val('');
+      $(this).find('output').val('140');
     } else if(textLength > 140){
       // alert('Too many characters');
       // $('.container').prepend(createWarningMessage('Please use less that 140 characters')).delay(2000);
