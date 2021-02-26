@@ -4,7 +4,7 @@ dark grey: #4e5658
 Yellow: #8a754d
 Light grey: #869498
 lightest grey: #bbb3af */
-nav {
+.nav-bar {
   max-height: 120px;
   color: #ffffff;
   display: flex;
@@ -15,7 +15,7 @@ nav {
   top: 0;
 }
 
-nav span {
+.main-logo {
   font-size: 1.5em;
   font-family: "Bungee";
   margin: 1.5em;
@@ -32,3 +32,9 @@ nav span {
 .label-style {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+  #write-a-tweet {
+    display: none;
+  }
+ }
